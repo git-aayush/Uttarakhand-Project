@@ -532,7 +532,7 @@ button a {
 
 /* Media Queries */
 
-@media (width > 1300px) {
+@media screen and  (min-width: 1300px) {
   .header__image img:nth-child(1) {
     max-width: 400px;
   }
@@ -542,7 +542,7 @@ button a {
   }
 }
 
-@media (750px <=width <=1200px) {
+@media screen and (min-width : 750px) and (max-width : 12000px) {
 
   /* NAVBAR */
   nav {
@@ -680,7 +680,7 @@ button a {
 }
 
 
-@media (width < 600px) {
+@media screen and (max-width: 600px) {
 
   /* NAVBAR */
   nav {
