@@ -542,7 +542,7 @@ button a {
   }
 }
 
-@media screen and (min-width : 750px) and (max-width : 12000px) {
+@media screen and (min-width : 700px) and (max-width : 12000px) {
 
   /* NAVBAR */
   nav {
@@ -680,7 +680,7 @@ button a {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 698px) {
 
   /* NAVBAR */
   nav {
