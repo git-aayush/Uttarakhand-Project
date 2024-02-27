@@ -181,7 +181,7 @@ header {
 
 .header__image img {
   position: absolute;
-  top: 55%;
+  top: 40%;
   left: 50%;
   border: 0.5rem solid var(--extra-light);
   border-radius: 2rem;
@@ -189,12 +189,12 @@ header {
 }
 
 .header__image img:nth-child(1) {
-  max-width: 250px;
+  max-width: 280px;
   transform: translate(-70%, -50%);
 }
 
 .header__image img:nth-child(2) {
-  max-width: 200px;
+  max-width: 220px;
   transform: translate(0%, -25%);
 }
 
@@ -276,26 +276,30 @@ header {
 
 /* HOLY PLACE AND ADVENTURES*/
 
-.place__grid, .adventure__grid {
+.place__grid,
+.adventure__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 1rem;
 }
 
-.place__card, .adventure__card {
+.place__card,
+.adventure__card {
   overflow: hidden;
   position: relative;
   isolation: isolate;
   cursor: pointer;
 }
 
-.place__card img, .adventure__card img {
+.place__card img,
+.adventure__card img {
   width: 280px;
   height: 300px;
   border-radius: 1rem;
 }
 
-.place__details, .adventure__details {
+.place__details,
+.adventure__details {
   position: absolute;
   width: calc(100% - 2rem);
   padding: 0.5rem;
@@ -315,17 +319,19 @@ header {
   bottom: 1rem;
 }
 
-.adventure__card:hover .adventure__details{
+.adventure__card:hover .adventure__details {
   bottom: 1rem;
 }
 
-.place__title, .adventure__title {
+.place__title,
+.adventure__title {
   font-size: 1rem;
   margin-bottom: 0.5rem;
   color: var(--text-dark-2);
 }
 
-.place__subtitle, .adventure__subtitle {
+.place__subtitle,
+.adventure__subtitle {
   font-size: 0.7rem;
   font-weight: 400;
 }
@@ -582,26 +588,30 @@ button a {
     font-size: 2.5rem;
   }
 
-  .place__grid, .adventure__grid {
+  .place__grid,
+  .adventure__grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
   }
 
-  .place__card, .adventure__card {
+  .place__card,
+  .adventure__card {
     overflow: hidden;
     position: relative;
     isolation: isolate;
     cursor: pointer;
   }
 
-  .place__card img, .adventure__card img {
+  .place__card img,
+  .adventure__card img {
     width: 320px;
     height: 350px;
     border-radius: 1rem;
   }
 
-  .place__details, .adventure__details {
+  .place__details,
+  .adventure__details {
     width: calc(100% - 5rem);
     left: 42%;
     transform: translateX(-45%);
@@ -611,13 +621,15 @@ button a {
     transition: 0.3s;
   }
 
-  .place__title, .adventure__title {
+  .place__title,
+  .adventure__title {
     font-size: 1.1rem;
     margin-bottom: 0.5rem;
     color: var(--text-dark-2);
   }
 
-  .place__subtitle, .adventure__subtitle {
+  .place__subtitle,
+  .adventure__subtitle {
     font-size: 0.8rem;
     font-weight: 400;
   }
@@ -724,60 +736,52 @@ button a {
     width: 100%;
     justify-content: space-evenly;
   }
-
   .nav__logo {
     font-size: 1.5rem;
     font-weight: 700;
   }
-
   .nav__links__sidebar {
     width: 40%;
   }
-
   .nav__links__sidebar a {
     font-weight: 600;
     font-size: 1.3rem;
   }
-
   .showLink {
     display: block;
     font-weight: bolder;
   }
-
   .link1 {
     display: none;
   }
-
   .header__container {
     grid-template-columns: repeat(1, 1fr);
     justify-content: center;
   }
-
-  .header__image {
-    min-height: 600px;
+  .header__image{
+    margin-top: 2rem;
+    height: 400px;
+    margin-bottom: 1rem;
   }
 
 
-  /* HOLY PLACES AND ADVENTURES */
-  .place__container, .adventure__container {
+  /* HOLY PLACES */
+  .place__container {
     height: 1550px;
   }
-
-  .place__grid, .adventure__grid {
+  .place__grid {
     grid-template-columns: repeat(2, 1fr);
     width: 65vw;
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
   }
-
-  .place__card img, .adventure__card img {
+  .place__card img {
     border-radius: 1rem;
     height: 300px;
     width: 240px;
   }
-
-  .place__details, .adventure__details {
+  .place__details {
     position: absolute;
     width: 180px;
     bottom: -20rem;
@@ -785,8 +789,7 @@ button a {
     transform: translateX(-78%);
     text-align: center;
   }
-
-  .place__subtitle, .adventure__subtitle {
+  .place__subtitle {
     font-size: 0.6rem;
   }
 
@@ -795,18 +798,15 @@ button a {
   .famousPlaces__container {
     min-height: 800px;
   }
-
   .slider__container {
     width: 500px;
     height: 400px;
     left: 40%;
   }
-
   .slider__container .slide .item {
     width: 100px;
     height: 160px;
   }
-
   .slide .item:nth-child(1),
   .slide .item:nth-child(2) {
     top: 0;
@@ -816,41 +816,64 @@ button a {
     width: 100%;
     height: 100%;
   }
-
   .slide .item:nth-child(3) {
     left: 50%;
   }
-
   .slide .item:nth-child(4) {
     left: calc(50% + 110px)
   }
-
   .slide .item:nth-child(5) {
     left: calc(50% + 220px)
   }
-
   .slide .item:nth-child(6) {
     left: calc(50% + 330px);
   }
-
   .item .content {
     top: 60%;
     left: 10px;
     width: 250px;
   }
-
   .content .name {
     font-size: 25px;
   }
-
   .content .des {
     font-size: 14px;
   }
-
   .content button {
     padding: 8px 10px;
     font-size: 11px;
   }
+
+
+  /* ADVENTURES */
+  .adventure__container {
+    height: 1550px;
+  }
+  .adventure__grid {
+    grid-template-columns: repeat(2, 1fr);
+    width: 65vw;
+    margin: auto;
+  }
+
+  .adventure__card img {
+    border-radius: 1rem;
+    height: 300px;
+    width: 240px;
+  }
+
+  .adventure__details {
+    position: absolute;
+    width: 180px;
+    bottom: -20rem;
+    left: 70%;
+    transform: translateX(-78%);
+    text-align: center;
+  }
+
+  .adventure__subtitle {
+    font-size: 0.6rem;
+  }
+
 
 }
 
@@ -862,33 +885,27 @@ button a {
     width: 100%;
     justify-content: space-evenly;
   }
-
   .nav__logo {
     font-size: 1.6rem;
     font-weight: 700;
   }
-
   .nav__links__sidebar {
     width: 100%;
     display: flex;
     justify-content: flex-start;
     padding: 2rem;
   }
-
   .nav__links__sidebar a {
     font-weight: 600;
     font-size: 1.5rem;
   }
-
   .nav__links img {
     height: 30px;
     width: 30px;
   }
-
   .showLink {
     display: block;
   }
-
   .link1 {
     display: none;
   }
@@ -900,29 +917,38 @@ button a {
     grid-template-columns: repeat(1, 1fr);
     gap: 1.5rem;
   }
-
-  .header__image {
-    min-height: 300px;
+  .header__image{
+    margin-top: 2rem;
+    height: 300px;
+  }
+  .header__image img:nth-child(1) {
+    max-width: 230px;
+  }
+  .header__image img:nth-child(2) {
+    max-width: 180px;
   }
 
 
 
   /* HOLY PLACES AND ADVENTURES */
-  .place__grid, .adventure__grid {
+  .place__grid,
+  .adventure__grid {
     grid-template-columns: repeat(1, 1fr);
-    justify-content: center;
+    margin: auto;
     gap: 1rem;
     width: fit-content;
   }
 
-  .place__card img, .adventure__card img {
+  .place__card img,
+  .adventure__card img {
     border-radius: 1rem;
     height: 350px;
     width: 300px;
     text-align: center;
   }
 
-  .place__details, .adventure__details {
+  .place__details,
+  .adventure__details {
     position: absolute;
     width: 200px;
     bottom: -20rem;
@@ -931,7 +957,8 @@ button a {
     text-align: center;
   }
 
-  .place__subtitle, .adventure__subtitle {
+  .place__subtitle,
+  .adventure__subtitle {
     font-size: 0.7rem;
   }
 
